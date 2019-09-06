@@ -1,0 +1,82 @@
+<section id="container">
+  <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+  <!--header start-->
+  <header class="header black-bg">
+    <div class="sidebar-toggle-box">
+      <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="index.html" class="logo"><b>Transfert<span></span></b></a>
+    <!--logo end-->
+    <div class="nav notify-row" id="top_menu">
+      <!--  notification start -->
+      <ul class="nav top-menu">
+    
+        
+        
+       
+      
+      </ul>
+      <!--  notification end -->
+    </div>
+    <div class="top-menu">
+      <ul class="nav pull-right top-menu">
+        <li><a class="logout" href="login.html">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--header end-->
+  <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+  <!--sidebar start-->
+  <aside>
+    <div id="sidebar" class="nav-collapse ">
+      <!-- sidebar menu start-->
+      <ul class="sidebar-menu" id="nav-accordion">
+        <p class="centered"><a href="profile.html"><img src="assets/img/wari.jpg" class="img-circle" width="80"></a></p>
+        <h5 class="centered">z@p</h5>
+        <li class="sub-menu"  *ngIf="roles==='Super_admin'">
+          <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span >Super-admin</span>
+          </a>
+          <ul class="sub"  >
+            <li><a >Creer Entreprise</a></li>
+            <li><a routerLink="/entreprises">Liste Entreprise</a></li>
+            <li><a >Creer Caissier</a></li>   
+            <li><a routerLink="/utilisateur">Creer User</a></li>         
+          </ul>
+        </li>
+
+        <li class="sub-menu"  *ngIf="roles==='Admin_principal'">
+          <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span >Super-admin</span>
+          </a>
+          <ul class="sub"  >
+            <li><a >Creer User</a></li>
+            <li><a >Bloquer User</a></li>
+            <li><a >Lister User</a></li>
+            <li><a >Donnez un compte User</a></li>           
+          </ul>
+        </li>
+
+        <li class="sub-menu"  *ngIf="roles==='Admin'">
+          <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span >Transaction</span>
+          </a>
+          <ul class="sub"  >
+            <li><a >Envoi</a></li>
+            <li><a >Retrait</a></li>                       
+          </ul>
+        </li>      
+      </ul>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>
+ 
+</section>
